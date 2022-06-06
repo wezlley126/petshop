@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+h1{
+  text-align: center;
+}
+/*
+  a mimir
+*/
+#logo{
+  width: 200px;
+}
+.navbar {
+  display: flex;
+  background-color: #35DC89;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0px;
+  margin: 0;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #35DC89;
+  color: white;
+  transition: 0.50s;
+}
+
+.Titulos h1 {
+    font-family: Montserrat;
+    background-color: #35DC89;
+    color: Black;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    width: 70%;
+    margin: 20px 15%;
+}
+
+.Comidas {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.comida {
+    margin: 10px;
+    margin-bottom: 20px;
+    transition: border .2s;
+    max-width: 100%;
+    -moz-animation: all 0.5s;
+    -webkit-animation: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.78;
+}
+
+.comida:hover {
+    border: 2px solid #00BFFF;
+    border-radius: 5px;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1.5;
+}
+
+.comida img {
+    width: 300px;
+    height: 250px;
+    display: inline
+}
+
+.Comidas p {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #00BFFF;
+    color: #8B0000;
+    font-family: Nunito;
+    border-radius: 5px;
+}
+
+.titulos {
+    font-family: Montserrat;
+    background-color: #35DC89;
+    color: Black;
+    border-radius: 10px;
+    font-size: 35px;
+    margin: 10px;
+    padding: 0px 25%;
+}
+
+.botaodecomprar {
+    background-color: rgb(4, 182, 4);
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+#carroça{
+
+}
+/* os navs sao as configuracoes atuais do menu*/
+
+@media (max-width: 700px) {
+  .row, .navbar,  {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .row, .navbar, {
+    flex-direction: row;
+  }
+}
+@media (max-width: 300px){
+  .row, .navbar {
+    flex-direction: row;
+  }
+}
