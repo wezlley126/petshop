@@ -1,0 +1,44 @@
+body{
+  text-align: center;
+  background: #f8f8f8;
+}
+#compras{
+  border: outset 2px black;
+  width: 500px;
+  margin-left: 30%;
+  margin-top: 8%;
+  padding: 8px;
+  background: #35DB88;
+  display: block;
+}
+#compras:hover{
+  001em blackbox-shadow: 200px;
+/*Ser dormiu e gay*/
+}
+#titulo_carrinho{
+  font-family: inherit;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+#tabela_compras{
+  border: solid 2px black;
+}
+td{
+  border: solid 1px black;
+}
+#produto_nulo{
+  font-size: 20px;
+  color: black;
+}
+#button{
+  padding: 6px;
+  margin: 12px;
+  background: #00CD00;
+}
+
+#cancelar_compras{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 7.8%;
+}

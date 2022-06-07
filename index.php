@@ -1,4 +1,6 @@
-
+<?php
+  session_start()
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +19,8 @@
         <!-- <img src='Comidas/logo.png' id="logo"> -->
         <a href='forms/doacao.php'>Doações</a>
         <a href="forms/contato.php">Contato</a>
+        <a href="carrinho/Carrinho.php"><img id="carroça" src="carroça.png" ></a>
+        <a href="carrinho/Sair.php">Cancelar compras</a>
         </ul>
     </div>
     <section id='cardapio'>
@@ -30,7 +34,7 @@
       "Mordedor" => array("imagens/acessorios/mordedor.jpg" => 5.40),
       "Caixa de viagem" => array("imagens/acessorios/caixa de viagem.jpg" => 54.20),
       "Cama pet" => array("imagens/acessorios/cama-pet-p-50x55cm-brinde-colchao-pet.jpg" => 15.90),
-      "Vasilha" => array("imagens/acessorios/vasilha.jpg" => 13.45),
+      "Vasilha" => array("imagens/acessorios/vasilha.jpg" => 13.40),
       "Coleira" => array("imagens/acessorios/coleira_azul.png" => 13.30)
     );
     $_SESSION['cachorros'] = array(
@@ -39,7 +43,7 @@
       "Ração Champ" => array("imagens/cachorros/Ração Champ.png" => 19.90),
       "Ração DG" => array("imagens/cachorros/Ração DG.png" => 8.40),
       "Ração Equilíbrio" => array("imagens/cachorros/Ração Equilíbrio.png" => 33.30),
-      "Ração Golden Senior 15kg" => array("imagens/cachorros/Ração Golden Senior 15kg.png" => 27.85)
+      "Ração Golden Senior 15kg" => array("imagens/cachorros/Ração Golden Senior 15kg.png" => 27.90)
 
     );
     $_SESSION['gatos'] = array(
@@ -48,7 +52,7 @@
       "Caixa Viagem" => array("imagens/gatos/caixa-viagem.jpg" => 52.10),
       "Escova dupla" => array("imagens/gatos/escova dupla.jpg" => 9.30),
       "Golden Gatos" => array("imagens/gatos/golden-gatos.jpg" => 13.20),
-      "Premium Cat" => array("imagens/gatos/premium-cat.jpg" => 14.45)
+      "Premium Cat" => array("imagens/gatos/premium-cat.jpg" => 14.40)
     );
     $_SESSION['passaros'] = array(
       "Papa para Filhotes" => array("imagens/passaros/papa para filhotes.jpg" => 8.20),
@@ -56,11 +60,11 @@
       "Ração Nutricional" => array("imagens/passaros/ração nutricional.jpg" => 12.10),
       "Suportes de Madeira" => array("imagens/passaros/suportes de madeira.jpg" => 54.40),
       "Alpiste 500G" => array("imagens/passaros/ALPISTE-500GSITE.png" => 7.40),
-      "Gaiola de metal Epoxi" => array("imagens/passaros/gaiola-passaros-metal-periquito-canario-agapornis-capela-epoxi-6390.png" => 37.45)
+      "Gaiola de metal Epoxi" => array("imagens/passaros/gaiola-passaros-metal-periquito-canario-agapornis-capela-epoxi-6390.png" => 37.50)
     );
     ?>
     <?php
-      include 'identificador_de_comida/identificador.php';
+      include 'carrinho/identificador.php';
       //echo "<br/>$compra";
     ?>
     <?php
@@ -107,7 +111,7 @@
                 <section class='comida'>
                     <img src='<?php echo $imagem ?>'>
                     <p><?php echo $nome ?>
-                       <br/>Preço: R$ <?php echo $preço ?>
+                       <br/>Preço: R$ <?php echo $preço."0" ?>
                        <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
                 </section>
                 <?php
@@ -144,7 +148,7 @@
           <section class='comida'>
               <img src='<?php echo $imagem ?>'>
               <p><?php echo $nome ?>
-                <br/>Preço: R$ <?php echo $preço ?>
+                <br/>Preço: R$ <?php echo $preço."0" ?>
                <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
              </section>
           <?php
@@ -191,7 +195,7 @@
                 <section class='comida'>
                     <img src='<?php echo $imagem ?>'>
                     <p><?php echo $nome ?>
-                      <br/>Preço: R$ <?php echo $preço ?>
+                      <br/>Preço: R$ <?php echo $preço."0" ?>
                      <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
                    </section>
                 <?php
@@ -237,7 +241,7 @@
                     <section class='comida'>
                         <img src='<?php echo $imagem ?>'>
                         <p><?php echo $nome ?>
-                          <br/>Preço: R$ <?php echo $preço ?>
+                          <br/>Preço: R$ <?php echo $preço."0" ?>
                          <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
                        </section>
                     <?php
