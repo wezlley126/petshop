@@ -79,7 +79,7 @@
       echo "<br/>";*/
       if (!isset($_GET['adicionar'])) {
         ?>
-        <div style="text-align: center; font-size: 20px; color: blue;">
+        <div style="text-align: center; font-size: 20px; color: black;">
             <?php
             if ($_SESSION['compra'] != null){
               echo $_SESSION['compra']." foi adicionado ao carrinho de compras.<br/>";

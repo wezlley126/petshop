@@ -26,12 +26,9 @@
 ?>
         <h1>Seja bem-vindo</h1>
 
-        <form action="../php/contato.php" method="GET">
-            <input type="text" name="endereco" id="" placeholder="Endereço: ">
+        <form action="../php/contato.php" method="post">
 
             <input type="number" name="cep" placeholder="CEP: " value="">
-
-            <input type="number" name="Número" id="" placeholder="Número: ">
 
             <input type="text" name="nome" placeholder="Nome: " value="">
 

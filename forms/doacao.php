@@ -21,8 +21,7 @@
           </select>
             <input type="number" name="quantidade" id="" placeholder="Digite a quantia" required="true">
             <input type="text" name="nome" id="" placeholder="Nome:">
-            <input type="text" name="estado" id="" placeholder="Estado:">
-            <input type="text" name="cidade" id="" placeholder="Cidade:">
+            <input maxlength="9" type="number" name="cep" placeholder="CEP: " value="">
             <p>Você deseja:</p>
             <div class="icons">
                 <div>
