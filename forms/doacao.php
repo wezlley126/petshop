@@ -14,10 +14,10 @@
         <h1>Seja Bem-vindo!</h1>
         Faça uma doação para nos ajudar
 
-        <form action="login.php" method="GET">
-          <select class="" name="">
-            <option value="">Dinheiro(R$)</option>
-            <option value="">Ração(Kg)</option>
+        <form action="../php/doacoes.php" method="post">
+          <select class="" name="tipo">
+            <option value="Dinheiro">Dinheiro(R$)</option>
+            <option value="Ração">Ração(Kg)</option>
           </select>
             <input type="number" name="quantidade" id="" placeholder="Digite a quantia" required="true">
             <input type="text" name="nome" id="" placeholder="Nome:">
