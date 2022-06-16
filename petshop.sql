@@ -34,15 +34,6 @@ CREATE TABLE `contato` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `contato`
---
-
-LOCK TABLES `contato` WRITE;
-/*!40000 ALTER TABLE `contato` DISABLE KEYS */;
-/*!40000 ALTER TABLE `contato` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `doacao`
 --
 
@@ -60,13 +51,20 @@ CREATE TABLE `doacao` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `doacao`
+-- Table structure for table `users`
 --
 
-LOCK TABLES `doacao` WRITE;
-/*!40000 ALTER TABLE `doacao` DISABLE KEYS */;
-/*!40000 ALTER TABLE `doacao` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `nome` varchar(50) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -77,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-07 19:06:38
+-- Dump completed on 2022-06-16  9:34:50
