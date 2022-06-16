@@ -7,7 +7,7 @@
     <meta charset='utf-8'>
     <title>The Palacy Company</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <link rel='icon' href='imagens/logo.jpg'>
     <script type="text/javascript">
        source=""
@@ -17,6 +17,10 @@
     <div class='navbar'>
 
         <!-- <img src='Comidas/logo.png' id="logo"> -->
+        <a href="#cachorros">Cachorros</a>
+        <a href="#gatos">Gatos</a>
+        <a href="#passaros">Passáros</a>
+
         <a href='forms/doacao.php'>Doações</a>
         <a href="forms/contato.php">Contato</a>
         <a href="carrinho/Carrinho.php"><img id="carroça" src="carroça.png" ></a>
@@ -103,7 +107,7 @@
   <section class='Titulos'>
       <h1>Acessorios</h1>
   </section>
-  <section class='Comidas'>
+  <section id="acessorios" class='Comidas'>
         <?php
             foreach ($_SESSION['acessorios'] as $nome => $acessorio_produto) {
               foreach ($acessorio_produto as $imagem => $preço) {
@@ -112,32 +116,15 @@
                     <img src='<?php echo $imagem ?>'>
                     <p><?php echo $nome ?>
                        <br/>Preço: R$ <?php echo $preço."0" ?>
-                       <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
+                       <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Comprar</a></p>
                 </section>
                 <?php
               }
             }
         ?>
   </section>
-              <!--  <section class='comida'>
-                    <img src='Comidas/Pizza de carne.png'>
-                    <p>Pizza de carne
-                        <br>Preço: R$ R$28
-                        <br><a href='comprar/pizza/pizza_html.php' class='botaodecomprar'>Comprar</a>
-                    </p>
-                </section>
-                <section class='comida'>
-                    <img src='Comidas/Calabresa premium.png'>
-                    <p>Pizza calabresa premium <br>Preço: R$ 30
-                    <br><a href='comprar/pizza/pizza_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section>
-                <section class='comida'>
-                    <img src='Comidas/Calabres default.png'>
-                    <p>Pizza calabresa default
-                       <br> Preço : R$ 20
-                    <br><a href='comprar/pizza/pizza_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section> -->
-    <section class='titulos'>
+
+    <section id="cachorros" class='titulos'>
         <h1>Cachorros</h1>
     </section>
     <section class='Comidas'>
@@ -149,42 +136,15 @@
               <img src='<?php echo $imagem ?>'>
               <p><?php echo $nome ?>
                 <br/>Preço: R$ <?php echo $preço."0" ?>
-               <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
+               <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Comprar</a></p>
              </section>
           <?php
         }
       }
       ?>
     </section>
-    <!--
-    <section class='Comidas'>
-        <section class='comida'>
-            <img src='Comidas/Sushi Gunkan.png'>
-            <p>Sushi Gunkan
-                <br> Preço : R$ 25
-            <br><a href='comprar/sishu/sishu_html.php' class='botaodecomprar'>Comprar</a></p>
-        </section>
-        <section class='comida'>
-            <img src='Comidas/Sushis/Sushi hot roll.png'>
-            <p>Sushi Hossomaki Tekkamaki
-                <br> Preço : R$ 22
-            <br><a href='comprar/sishu/sishu_html.php' class='botaodecomprar'>Comprar</a></p>
-        </section>
-        <section class='comida'>
-            <img src='Comidas/Sushis/Sushi Joe.png'>
-            <p>Sushi Joe
-                <br> Preço : R$ 28
-            <br><a href='comprar/sishu/sishu_html.php' class='botaodecomprar'>Comprar</a></p>
-        </section>
-        <section class='comida'>
-            <img src='Comidas/Sushis/Sushi Uramaki.png'>
-            <p>Sushi Uramaki
-                <br> Preço : R$ 18
-            <br><a href='comprar/sishu/sishu_html.php' class='botaodecomprar'>Comprar</a></p>
-        </section>
-        </section>
-      -->
-        <section class='titulos'>
+
+        <section id="gatos" class='titulos'>
             <h1>Gatos</h1>
         </section>
         <section class='Comidas'>
@@ -196,41 +156,15 @@
                     <img src='<?php echo $imagem ?>'>
                     <p><?php echo $nome ?>
                       <br/>Preço: R$ <?php echo $preço."0" ?>
-                     <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
+                     <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Comprar</a></p>
                    </section>
                 <?php
               }
             }
             ?>
           </section>
-          <!--
-            <section class='comida'>
-                <img src='Comidas/hamburguer/comida1.png'>
-                <p>Hambúrguer comum
-                    <br> Preço : R$ 24
-                <br><a href='comprar/hamburguer/hamburguer_html.php' class='botaodecomprar'>Comprar</a></p>
-            </section>
-            <section class='comida'>
-                <img src='Comidas/hamburguer/comida2.png'>
-                <p>Hambúrguer de Frango
-                    <br> Preço : R$ 21
-                <br><a href='comprar/hamburguer/hamburguer_html.php' class='botaodecomprar'>Comprar</a></p>
-            </section>
-            <section class='comida'>
-                <img src='Comidas/hamburguer/comida3.png'>
-                <p>Hambúrguer MultiCheese
-                    <br> Preço : R$ 32
-                <br><a href='comprar/hamburguer/hamburguer_html.php' class='botaodecomprar'>Comprar</a></p>
-            </section>
-            <section class='comida'>
-                <img src='Comidas/hamburguer/comida4.png'>
-                <p>Big Hambúrguer
-                    <br> Preço : R$ 37
-                <br><a href='comprar/hamburguer/hamburguer_html.php' class='botaodecomprar'>Comprar</a></p>
-            </section>
-            </section>
-          -->
-            <section class='titulos'>
+
+            <section id="passaros" class='titulos'>
                 <h1>Passáros</h1>
             </section>
             <section class='Comidas'>
@@ -242,42 +176,11 @@
                         <img src='<?php echo $imagem ?>'>
                         <p><?php echo $nome ?>
                           <br/>Preço: R$ <?php echo $preço."0" ?>
-                         <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Adiconar ao carrinho</a></p>
+                         <br><a href='?adicionar=<?php echo $nome ?>' class='botaodecomprar'>Comprar</a></p>
                        </section>
                     <?php
                   }
                 }
                 ?>
-                <!--
-              </section>
-                <section class='comida'>
-                    <img src='Comidas/Veganas/Salada comum.png'>
-                    <p>Salada Comum
-                        <br> Preço : R$ 23
-                    <br><a href='comprar/vegana/vegana_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section>
-                <section class='comida'>
-                    <img src='Comidas/Veganas/Salada Molho Especial.png'>
-                    <p>Salada Molho Especial
-                        <br> Preço : R$ 25
-                    <br><a href='comprar/vegana/vegana_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section>
-                <section class='comida'>
-                    <img src='Comidas/Veganas/Salada com vinagre.png'>
-                    <p>Salada com Vinagre
-                        <br> Preço : R$ 21
-                    <br><a href='comprar/vegana/vegana_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section>
-                <section class='comida'>
-                    <img src='Comidas/Veganas/Salada tropical.png'>
-                    <p>Salada Tropical
-                        <br> Preço : R$ 26
-                    <br><a href='comprar/vegana/vegana_html.php' class='botaodecomprar'>Comprar</a></p>
-                </section>
-            </section>
-            </section>
-    </section>
-    </section>
-  -->
 </body>
 </html>

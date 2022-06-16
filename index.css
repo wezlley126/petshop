@@ -9,7 +9,7 @@
 
 
 body{
-  background-color: red;
+
 }
 
 h1{
@@ -108,11 +108,11 @@ h1{
 }
 
 .botaodecomprar {
-    background-color: rgb(4, 182, 4);
+    background-color: #32CD32;
     text-decoration: none;
     margin-top: 30px;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 0px;
     color: black;
     box-shadow: 2px 2px 2px black;
 }

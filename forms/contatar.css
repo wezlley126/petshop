@@ -25,7 +25,7 @@ body {
 .create-page {
     margin-top: 20px;
     width: 350px;
-    height: 680px;
+    height: 580px;
     background: linear-gradient(to right, #7fffd4, #48D1CC);
     position: absolute;
     top: 48%;
@@ -37,6 +37,7 @@ body {
     align-items: center;
     flex-direction: column;
     transition: all .45;
+    border-radius: 45px;
 }
 
 /*
@@ -91,13 +92,13 @@ body {
     background: rgb(36, 34, 34);
     color: #ffffff;
     font-size: 1em;
-    border: 2px solid rgba(245, 34, 6, 0.781);
+    border: 2px solid white;
 }
 .create-page form input[type = 'submit']:hover {
     background: rgb(36, 34, 34);
     color: #ffffff;
     font-size: 1em;
-    border: 2px solid rgba(245, 34, 6, 0.781);
+    border: 2px solid white;
 }
 
 

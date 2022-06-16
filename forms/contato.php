@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contatoo.css">
+    <link rel="stylesheet" type="text/css" href="contatar.css">
     <link rel="icon" href="icone.png">
     <title>Cadastrar</title>
 </head>
