@@ -3,13 +3,17 @@
     if (!isset($_SESSION['acessorios']) || !isset($_SESSION['cachorros']) || !isset($_SESSION['gatos']) || !isset($_SESSION['passaros'])) {
       header('location: ../index.php');
     }
+
     $array = array_merge($_SESSION['acessorios'], $_SESSION['cachorros'], $_SESSION['gatos'], $_SESSION['passaros']);
     $_SESSION['lista_de_pedidos'] = $array;
     //verifica se o usuario fez algum pedido e vai realizando etapas para verificar se o
     //produto existe, se existir ele é adicionado ao array $_SESSION['carrinho']
     if (isset($_GET['adicionar']))
       {
-
+        if (!isset($_SESSION['user'])) {
+          header('location: ../petshop/contas/logino.php');
+        }
+        else if(isset($_SESSION['user'])){
         $compra = $_GET['adicionar'];
 
         if (isset($array[$compra]))
@@ -42,6 +46,7 @@
 
           }
       }
+    }
     echo "<br/>";
     /*foreach ($array as $nome => $array) {
       if (isset($_SESSION[$nome])) {

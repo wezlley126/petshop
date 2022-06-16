@@ -9,9 +9,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <link rel='icon' href='imagens/logo.jpg'>
-    <script type="text/javascript">
-       source=""
-    </script>
 </head>
 <body style="text-align: center;">
     <div class='navbar'>
@@ -25,6 +22,7 @@
         <a href="forms/contato.php">Contato</a>
         <a href="carrinho/Carrinho.php"><img id="carroça" src="carroça.png" ></a>
         <a href="carrinho/Sair.php">Cancelar compras</a>
+        <a href="contas/Sair.php">Deslogar</a>
         </ul>
     </div>
     <section id='cardapio'>
